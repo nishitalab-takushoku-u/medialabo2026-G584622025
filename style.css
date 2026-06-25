@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* コンテンツ全体 */
+body > * {
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #3366cc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+h2 {
+    color: #3366cc;
+    border-left: 6px solid #3366cc;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+
+h3 {
+    color: #444;
+    background-color: #dfe8ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    line-height: 1.8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+p:has(a) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
